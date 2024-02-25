@@ -26,7 +26,6 @@ header img {
     width: 190px;
 }
 
-
 nav ul {
     list-style-type: None;
     text-align: center;
@@ -59,12 +58,6 @@ main {
     clear: left;
 }
 
-/*img {
-    max-width: 100%;
-    display: block;
-    align-items: center;
-    }
-*/
 body{
     background-color:lightblue;
 }
