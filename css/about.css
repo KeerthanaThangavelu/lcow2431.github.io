@@ -1,0 +1,214 @@
+/* General styles for the About Us page */
+body, header, nav, main, footer, h1, div, img, ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #b4e7f1;
+    height: 190px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #0867a7;
+    display: flex;
+}
+
+header h1 {
+    text-align: center;
+    margin: auto;
+    }
+
+header img { 
+    margin: 0 auto;
+    height: 190px;
+    width: 190px;
+}
+
+nav ul {
+    list-style-type: None;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+	font-family: 'Francois One', sans-serif;
+	font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color: #0d0d0d;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #000;
+    background-color: #5d71be;
+}
+
+main {
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.15em;
+    font-family: 'Roboto Slab', serif;
+    clear: left;
+}
+
+body{
+    background-color:lightblue;
+}
+
+.round { 
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.15em;
+    clear: left;
+        }
+/* Company Description section */
+.company-description {
+    margin-bottom: 30px;
+}
+
+.company-description h2 {
+    color: #0867a7;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.company-description p {
+    color: #0d0d0d;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Our Story section */
+.our-story {
+    margin-bottom: 30px;
+}
+
+.our-story h2 {
+    color: #0867a7;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.our-story p {
+    color: #0d0d0d;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Reasons to Shop section */
+.reasons-to-shop {
+    margin-bottom: 30px;
+}
+
+.reasons-to-shop h2 {
+    color: #0867a7;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.reasons-to-shop ol {
+    color: #0d0d0d;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.reasons-to-shop li {
+    margin-bottom: 10px;
+}
+
+/* Our Guarantee section */
+.our-guarantee {
+    margin-bottom: 30px;
+    border: solid #b4e7f1 2px;
+    box-shadow: 2px 2px 4px #197b8f;
+    border-radius: 8px;
+}
+
+.our-guarantee h2 {
+    color: #0867a7;
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.our-guarantee p {
+    color: #0d0d0d;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.our-guarantee strong {
+    color: #11489c;
+    font-weight: bold;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+
+	/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+	.tablet-desktop {
+		display: block;
+	}
+
+	.mobile {
+		display:none;
+	}
+
+	/* Tablet Viewport: STyle rule for header */
+	header { 
+		padding-bottom: 2%;
+	}
+	
+	/* Tablet Viewport: Style rules for nav area */
+	
+    nav ul {
+        list-style-type: None;
+        text-align: center;
+    }
+    
+    nav li {
+        display: inline-block;
+        font-size: 1.5em;
+        font-family: 'Francois One', sans-serif;
+        font-weight: bold;
+    }
+    
+    nav li a {
+        display: block;
+        color: #0d0d0d;
+        padding: 0.5em 1em;
+        text-decoration: none;
+    }
+    
+    nav li a:hover {
+        color: #000;
+        background-color: #5d71be;
+    }
+	
+	/* Tablet Viewport: Style rules for main content area */
+	main ul {
+		margin: 0 0 4% 10%;
+	}
+
+	
+}
+
+/* Media Query for Print */
+@media print {
+	
+	body {
+		background-color: #fff;
+		color: #000;
+	}
+}
