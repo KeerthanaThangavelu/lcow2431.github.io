@@ -41,14 +41,14 @@ nav li {
 
 nav li a {
     display: block;
-    color: #0d0d0d;
+    color: #fff;
     padding: 0.5em 1em;
     text-decoration: none;
 }
 
 nav li a:hover {
     color: #000;
-    background-color: #5d71be;
+    background-color: #fff;
 }
 
 main {
@@ -138,6 +138,7 @@ footer {
     border: solid #b4e7f1 2px;
     box-shadow: 2px 2px 4px #197b8f;
     border-radius: 8px;
+    text-align:center;
 }
 
 .our-guarantee h2 {
@@ -152,6 +153,15 @@ footer {
     font-size: 1.1em;
     line-height: 1.6;
 }
+
+.our-guarantee a:hover{
+    color:#af561a;
+}
+
+.our-guarantee a:visited{
+    color: gray;
+}
+
 
 .our-guarantee strong {
     color: #11489c;
@@ -181,7 +191,7 @@ figcaption {
 
 
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 630px), print {
+@media screen and (max-width: 768px), print {
 
 	/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
 	.tablet-desktop {
@@ -213,14 +223,14 @@ figcaption {
     
     nav li a {
         display: block;
-        color: #0d0d0d;
-        padding: 0.5em 1em;
+        color: #fff;
+        padding: 0.25em 0.5em 0.25em;
         text-decoration: none;
     }
     
     nav li a:hover {
         color: #000;
-        background-color: #5d71be;
+        background-color: #fff;
     }
 	
 	/* Tablet Viewport: Style rules for main content area */
@@ -243,7 +253,7 @@ figcaption {
 
     main {
         padding: 2%;
-        background-color: #e5e9fc;
+        background-color: #fff;
         overflow: auto;
         font-family: 'Roboto', sans-serif;
         }
@@ -268,6 +278,11 @@ figcaption {
     text-decoration: none;
     }
 
+    nav li a:hover {
+        color: #000;
+        background-color: #fff;
+    }
+
     header {
         position: -webkit-sticky;
         position: sticky;
@@ -285,7 +300,12 @@ figcaption {
     header img { 
         height: 150px;
         width: 150px;
+    }  
+
+    .image-container{
+        display: none;
     }
+
         
 }
 

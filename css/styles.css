@@ -40,14 +40,14 @@ nav li {
 
 nav li a {
     display: block;
-    color: #0d0d0d;
+    color: #fff;
     padding: 0.5em 1em;
     text-decoration: none;
 }
 
 nav li a:hover {
     color: #000;
-    background-color: #5d71be;
+    background-color:#fff;
 }
 
 main {
@@ -78,7 +78,7 @@ body{
     border-radius: 8px;
 }
 
-.customer-guarantee {
+#customer-guarantee {
     clear: both; 
     margin-top: 20px; 
     padding-top: 20px;
@@ -99,6 +99,58 @@ footer {
     clear: left;
         
 }
+/* Media Query for Tablet Viewport */
+@media screen and (max-width: 768px), print {
+
+	/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+	.tablet-desktop {
+		display: block;
+	}
+
+	.mobile {
+		display:none;
+	}
+
+	/* Tablet Viewport: STyle rule for header */
+	header { 
+		padding-bottom: 2%;
+	}
+	
+	/* Tablet Viewport: Style rules for nav area */
+	
+    nav ul {
+        list-style-type: None;
+        text-align: center;
+    }
+    
+    nav li {
+        display: inline-block;
+        font-size: 1.5em;
+        font-family: 'Francois One', sans-serif;
+        font-weight: bold;
+    }
+    
+    nav li a {
+        display: block;
+        color: #fff;
+        padding: 0.25em 0.5em 0.25em;
+        text-decoration: none;
+    }
+    
+    nav li a:hover {
+        color: #000;
+        background-color: #fff;
+    }
+	
+	/* Tablet Viewport: Style rules for main content area */
+	main ul {
+		margin: 0 0 4% 10%;
+	}
+
+	
+}
+
+/* Media Query for Mobile Viewport */
 @media screen and (max-width: 600px) {
 
     header h1 {
@@ -110,7 +162,7 @@ footer {
 
     main {
         padding: 2%;
-        background-color: #e5e9fc;
+        background-color: #fff;
         overflow: auto;
         font-family: 'Roboto', sans-serif;
         }
@@ -123,7 +175,7 @@ footer {
     nav li {
     display: block;
     font-size: 1.5em;
-    border-top: 1px solid #e5e9fc;
+    border-top: 1px solid #0f0f10;
 
     }
 
@@ -133,6 +185,11 @@ footer {
     text-align: center;
     padding: 0.5em 1em;
     text-decoration: none;
+    }
+
+    nav li a:hover {
+        color: #000;
+        background-color: #fff;
     }
 
     header {
@@ -152,6 +209,20 @@ footer {
     header img { 
         height: 150px;
         width: 150px;
+    }  
+
+    .image-container{
+        display: none;
     }
+
         
+}
+
+/* Media Query for Print */
+@media print {
+	
+	body {
+		background-color: #fff;
+		color: #000;
+	}
 }
