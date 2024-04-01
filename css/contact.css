@@ -1,4 +1,5 @@
-body, header, nav, main, footer, h1, div, img, ul ,audio,video{
+/* General styles for the Contact Us page */
+body, header, nav, main, footer, h1, div, img, ul {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -47,7 +48,7 @@ nav li a {
 
 nav li a:hover {
     color: #000;
-    background-color:#fff;
+    background-color: #fff;
 }
 
 main {
@@ -62,73 +63,141 @@ body{
     background-color:lightblue;
 }
 
-#salesitem1,#salesitem2 {
-    width: 44%;
-    float:  left;
-    margin: 0 2%;
-    border: solid #b4e7f1 2px;
-    box-shadow: 2px 2px 4px #197b8f;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .round { 
     border-radius: 8px;
-}
-
-#customer-guarantee {
-    clear: both; 
-    margin-top: 20px; 
-    padding-top: 20px;
-    display: flex;
-    align-items: center;
-  
-}
-
-.action {
-	font-size: 1.35em;
-	color: #11489c;
-	font-weight: bold;
-}
-
-#media {
-    text-align: center;
-    color: #0867a7;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px; 
-}
-
-#media h2 {
-    margin-bottom: 20px;
-}
-
-#media audio {
-    margin-bottom: 20px; 
-}
-.video-container {
-    position: relative;
-    overflow: hidden;
-    padding-top: 56.25%;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 
 footer {
     text-align: center;
     font-size: 1.15em;
     clear: left;
-        
+        }
+
+.tablet-desktop {
+    display: none;
 }
+
+#contact{
+    text-align: center;
+}
+
+#contact h2,p{
+    color: #0867a7;
+}
+
+#contact .email-link a {
+    color: #4645a8;
+    text-decoration: none;
+    font-weight: bold;
+    }
+
+.tel-link {
+    background-color: #0867a7;
+    padding: 2%;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    border-radius: 20px;
+    }
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+    }
+
+.map {
+    border: 0px solid #b4e7f1;
+    width: 90%;
+    height: 30%;
+    position: absolute;
+    }
+
+/* Form styles */
+#form-container {
+    margin: 0 auto;    
+    background: linear-gradient(to right, #cdf3fb, #fff);
+    background-color: lightblue;
+    width: 70%;
+}
+
+#form-container h2 {
+    color: #0867a7;
+    margin-bottom: 20px;
+}
+
+#form-container form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+#form-container fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+#form-container legend {
+    color: #0867a7;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#form-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #0867a7;
+}
+
+#form-container input[type="text"],
+#form-container input[type="email"],
+#form-container input[type="tel"],
+#form-container textarea,
+#form-container select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#form-container textarea {
+    height: 100px;
+    resize: none;
+}
+
+#form-container input[type="radio"],
+#form-container input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#form-container .form-buttons {
+    text-align: center;
+}
+
+#form-container button {
+    padding: 10px 20px;
+    background-color: #0867a7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#form-container button[type="reset"] {
+    background-color: #5f5e64;
+}
+
+#form-container button:hover {
+    background-color: #054e76;
+}
+
+    
+
 /* Media Query for Tablet Viewport */
 @media screen and (max-width: 768px), print {
 
