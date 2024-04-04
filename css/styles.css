@@ -177,6 +177,31 @@ footer {
 		margin: 0 0 4% 10%;
 	}
 
+    #salesitem1, #salesitem2, #customer-guarantee {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+    
+    #salesitem1, #salesitem2 {
+        display: block; 
+    }
+    
+    #salesitem1 img, #salesitem2 img {
+        width: 100%; 
+        border-radius: 8px; 
+    }
+    
+    #customer-guarantee {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+    }
+    
+    .action {
+        margin-top: 10px; 
+    }
+
 	
 }
 
@@ -243,6 +268,31 @@ footer {
 
     .image-container{
         display: none;
+    }
+
+    #salesitem1, #salesitem2, #customer-guarantee {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+    
+    #salesitem1, #salesitem2 {
+        display: block; 
+    }
+    
+    #salesitem1 img, #salesitem2 img {
+        width: 100%; 
+        border-radius: 8px; 
+    }
+    
+    #customer-guarantee {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+    }
+    
+    .action {
+        margin-top: 10px; 
     }
 
         
